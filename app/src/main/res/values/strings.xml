@@ -3,4 +3,11 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="address">输入地址</string>
+    <string name="shuxian">|</string>
+    <string name="yubao">预报</string>
+    <string name="live_level">生活指数</string>
+    <string name="ganmao">感冒</string>
+    <string name="clothes">穿衣</string>
+    <string name="siwaixian">实时紫外线</string>
+    <string name="xiche">洗车</string>
 </resources>

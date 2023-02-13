@@ -14,6 +14,12 @@ object SunnyWeatherNetwork {
     //await() 为了不占时间 suspend 主要在携程
     private val placeService = ServiceCreator.create<PlaceService>()
 
+    private val weatherService = ServiceCreator.create<WeatherService>()
+
+    suspend fun getDailyResponse(lng : String ,lat : String )= weatherService.getDailyResponse(lng,lat).await()
+
+    suspend fun getRealtimeResponse(lng : String , lat: String)=weatherService.getRealtimeResponse(lng,lat).await()
+
     suspend fun searchPlaces(query: String)= placeService.searchPlaces(query).await()
 
     private suspend fun <T> Call<T>.await():T {
